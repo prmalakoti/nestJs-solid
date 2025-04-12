@@ -37,3 +37,7 @@ $ npm run test:cov
 # SRP:
 
 `class/module should only have one job or one responsibility.`
+
+# OCP
+
+`Extending the payment service without modifying existing code (Open-Closed Principle)`
