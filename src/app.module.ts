@@ -9,10 +9,11 @@ import { OrdersModule as LSPOrdersModule } from './modules/LSP/orders/orders.mod
 
 import { OrdersModule as OrdersModuleOCP } from './modules/OCP/orders/orders.module';
 import { NotificationModule } from './modules/ISP/notification/notification.module';
+import { StorageModule } from './modules/DIP/storage/storage.module';
 //import { PaymentService } from './modules/OCP/payment/payment.service';
 //import { PaymentModule } from './modules/OCP/payment/payment.module';
 @Module({
-  imports: [ProductsModule, OrdersModule, OrdersModuleOCP, LSPOrdersModule, NotificationModule],
+  imports: [ProductsModule, OrdersModule, OrdersModuleOCP, LSPOrdersModule, NotificationModule, StorageModule],
   controllers: [AppController],
   providers: [AppService],
 })
