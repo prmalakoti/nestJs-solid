@@ -41,3 +41,7 @@ $ npm run test:cov
 # OCP
 
 `Extending the payment service without modifying existing code (Open-Closed Principle)`
+
+# LISKOV
+
+`Ensure that subclasses or derviced classes can be substitued for their base clasess without affecting the correctness of the program`
