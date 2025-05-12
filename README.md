@@ -45,3 +45,7 @@ $ npm run test:cov
 # LISKOV
 
 `Ensure that subclasses or derviced classes can be substitued for their base clasess without affecting the correctness of the program`
+
+# Interface Segregation principle
+
+`Create specific interface instead of large interface`
