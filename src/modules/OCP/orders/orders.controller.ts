@@ -31,7 +31,7 @@ export class OrdersController {
 
         const transactionId = await this.paymentService.processPayment(
             createdOrder.products.connect[0].productId,
-            PAYMENT_METHOD.PAYPAL);
+            PAYMENT_METHOD.CREDIT_CARD);
 
         console.log("transactionId ", transactionId);
 

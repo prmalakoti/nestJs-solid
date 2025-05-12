@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "1e2122f8-342d-4ca5-8c33-70c19bf69dd9",
+		"name": "SOLID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13817424"
+	},
+	"item": [
+		{
+			"name": "LSP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/LSP/orders/pricing/6"
+			},
+			"response": []
+		},
+		{
+			"name": "DIP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/storage/file/test"
+			},
+			"response": []
+		},
+		{
+			"name": "SRP-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/products"
+			},
+			"response": []
+		},
+		{
+			"name": "SRP-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "OCP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/ocp/orders"
+			},
+			"response": []
+		}
+	]
+}

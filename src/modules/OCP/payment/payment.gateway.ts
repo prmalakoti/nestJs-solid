@@ -8,10 +8,11 @@ export abstract class PaymentGateway {
 }
 
 export class CreditCardGateway implements PaymentGateway {
-    processPayment(order: Order): void {
+    processPayment(order: Order): string {
 
         console.log(`payment received via crdit card of order id: ${order}`);
         // Process credit card payment
+        return uuid();
     }
 }
 
@@ -24,8 +25,9 @@ export class PayPalGateway implements PaymentGateway {
 }
 
 export class BitcoinGateway implements PaymentGateway {
-    processPayment(order: Order): void {
+    processPayment(order: Order): string {
         // Process Bitcoin payment
+        return uuid();
     }
 }
 
