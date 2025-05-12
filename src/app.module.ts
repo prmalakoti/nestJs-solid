@@ -8,10 +8,11 @@ import { OrdersModule } from './modules/SRP/orders/orders.module';
 import { OrdersModule as LSPOrdersModule } from './modules/LSP/orders/orders.module';
 
 import { OrdersModule as OrdersModuleOCP } from './modules/OCP/orders/orders.module';
+import { NotificationModule } from './modules/ISP/notification/notification.module';
 //import { PaymentService } from './modules/OCP/payment/payment.service';
 //import { PaymentModule } from './modules/OCP/payment/payment.module';
 @Module({
-  imports: [ProductsModule, OrdersModule, OrdersModuleOCP, LSPOrdersModule],
+  imports: [ProductsModule, OrdersModule, OrdersModuleOCP, LSPOrdersModule, NotificationModule],
   controllers: [AppController],
   providers: [AppService],
 })

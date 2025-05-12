@@ -49,3 +49,8 @@ $ npm run test:cov
 # Interface Segregation principle
 
 `Create specific interface instead of large interface`
+
+# Dependency Inversion principle
+
+`Depend on the abstraction rather than concrete implementation`
+`Use interfaces or abstract classes to define contracts and rely on them in your code.`
